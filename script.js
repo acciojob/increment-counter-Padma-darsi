@@ -1,4 +1,3 @@
-//your JS code here. If required.
 // Select elements
 const counterParagraph = document.getElementById('counter');
 const incrementButton = document.getElementById('incrementBtn');
@@ -6,17 +5,14 @@ const incrementButton = document.getElementById('incrementBtn');
 // Initialize counter value
 let counterValue = 0;
 
-// Add event listener to the button
+// Add click event listener to the button
 incrementButton.addEventListener('click', () => {
-    // Display alert with the un-incremented value
-    alert(`Current value: ${counterValue}`);
-    
+    // Display alert with the current un-incremented value
+    alert(counterValue);
+
     // Increment the counter value
     counterValue++;
 
-    // Update the counter paragraph
+    // Update the counter paragraph to show the new value
     counterParagraph.textContent = counterValue;
-
-	alert(`Current value: ${counterValue}`);
-
 });
