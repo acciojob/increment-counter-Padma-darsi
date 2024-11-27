@@ -16,4 +16,7 @@ incrementButton.addEventListener('click', () => {
 
     // Update the counter paragraph
     counterParagraph.textContent = counterValue;
+
+	alert(`Current value: ${counterValue}`);
+
 });
